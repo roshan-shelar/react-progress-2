@@ -28,7 +28,7 @@ class Component extends React.Component {
 
 		return (
 			<div className={className} style={style} data-state={this.state.state} ref={this.initElement}>
-				<div className="loader-60devs-progress" style={thumbStyle}></div>
+				<div className="loader-60devs-progress" style={thumbStyle}>{this.props.children}</div>
 			</div>
 		)
 	}
